@@ -1,5 +1,5 @@
 {
-  "name": "react-native-modal-wrapper",
+  "name": "react-native-modal-alert-wrapper",
   "version": "1.0.0",
   "description": "Wrapper for react native Alert and Modal",
   "main": "src/index.ts",
@@ -14,10 +14,10 @@
   ],
   "author": "Dmitriy Chernenko",
   "license": "MIT",
-  "homepage": "https://github.com/ChernenkoDmitriy/react-native-modal-wrapper",
+  "homepage": "https://github.com/ChernenkoDmitriy/react-native-modal-alert-wrapper",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChernenkoDmitriy/react-native-modal-wrapper"
+    "url": "https://github.com/ChernenkoDmitriy/react-native-modal-alert-wrapper"
   },
   "jest": {
     "preset": "react-native"
