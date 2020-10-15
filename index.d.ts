@@ -1,4 +1,4 @@
-declare module 'react-native-circular-progress' {
+declare module 'react-native-modal-alert-wrapper' {
     import * as React from 'react';
     interface ModalWrapperProps {
         animationType?: 'none' | 'slide' | 'fade' | undefined;
