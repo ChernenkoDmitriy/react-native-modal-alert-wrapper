@@ -1,5 +1,4 @@
-  
-{
+  {
     "compilerOptions": {
       "noEmit": true,
       "lib": [
