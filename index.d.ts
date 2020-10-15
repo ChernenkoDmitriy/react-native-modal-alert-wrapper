@@ -28,5 +28,5 @@ declare module 'react-native-modal-alert-wrapper' {
             keyboardType?: string | undefined) => void;
     };
 
-    export class AlertWrapper implements IAlertWrapper { }
+    export const AlertWrapper: IAlertWrapper;
 };
