@@ -2,7 +2,6 @@
   "name": "react-native-modal-alert-wrapper",
   "version": "1.0.0",
   "description": "Wrapper for react native Alert and Modal",
-  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +12,10 @@
     "modal"
   ],
   "author": "Dmitriy Chernenko",
+  "source": "index.ts",
   "license": "MIT",
+  "main": "index.js",
+  "types": "index.d.ts",
   "homepage": "https://github.com/ChernenkoDmitriy/react-native-modal-alert-wrapper",
   "repository": {
     "type": "git",
