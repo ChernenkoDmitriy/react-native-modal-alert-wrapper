@@ -1,5 +1,4 @@
 import { AlertButton, AlertOptions, Alert } from "react-native";
-import { modalQueue } from "./modalQueue";
 
 interface IAlertWrapper {
     isShown: boolean;
@@ -66,7 +65,7 @@ class AlertWrapperClass implements IAlertWrapper {
         this.toogleIsShow(true);
         setTimeout(() => {
             Alert.alert(title, message, customButtons, options);
-        }, modalQueue.queue.length ? 250 : 0);
+        }, 500);
     }
 
     promt = (title: string,
@@ -93,10 +92,13 @@ class AlertWrapperClass implements IAlertWrapper {
             }));
         }
 
-        Alert.prompt(title, message, customButtons, type, defaultValue, keyboardType);
+        this.toogleIsShow(true);
+        setTimeout(() => {
+            Alert.prompt(title, message, customButtons, type, defaultValue, keyboardType);
+        }, 500);
     }
 }
 
-const AlertWrapper = new AlertWrapperClass();
+const AlertWrapper: IAlertWrapper = new AlertWrapperClass();
 
 export default AlertWrapper;

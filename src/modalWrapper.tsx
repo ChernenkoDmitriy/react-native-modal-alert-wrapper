@@ -15,9 +15,10 @@ interface Props {
     supportedOrientations?: ('portrait' | 'portrait-upside-down' | 'landscape' | 'landscape-left' | 'landscape-right')[] | undefined;
     transparent?: boolean;
     visible: boolean;
+    children: any;
 };
 
-const ModalWrapper: FC<Props> = memo((props) => {
+const ModalWrapper: FC<Props> = memo((props: Props) => {
     const { transparent, animationType, hardwareAccelerated, onDismiss, onOrientationChange, onRequestClose, presentationStyle, statusBarTranslucent, supportedOrientations } = props;
     const [isAlertShown, setIsAlertShown] = useState(AlertWrapper.isShown);
     const [isModalShown, setIsModalShown] = useState(false);
